@@ -3,6 +3,12 @@ import java.util.ArrayList;
 public class Exercises {
 
   public int findMe(int[] list, int target) {
+
+    int n = list.length;
+    for (int i = 0; i < n; i++){
+      if (list[i] == 7)
+        return i;
+    }
     return -1;
   }
 
