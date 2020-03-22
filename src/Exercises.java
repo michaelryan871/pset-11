@@ -48,6 +48,19 @@ public class Exercises {
   }
 
   public int findMeFaster(String[] list, String target) {
+    if (list == null || target == null){
+      return -1;
+    }
+
+    int start = 0;
+    int emd = list.length - 1;
+    int middle = 0;
+
+    while (start <= end) {
+      middle = (start + end) / 2; 
+    }
+
+
     return -1;
   }
 
