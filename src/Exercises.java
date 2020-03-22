@@ -129,7 +129,26 @@ public class Exercises {
     return list;
   }
 
-  public ArrayList<Integer> insertion(ArrayList<Integer> list, boolean ascending) {
+  public ArrayList<Integer> insertion(ArrayList<Integer> list, boolean ascending) {]
+    if (list == null || list.length == 0){
+      return null;
+
+      int n = int.length;
+      String temp;
+      if (ascending){
+        for (int i = 1; i < n; i++){
+          temp = list[i];
+          int j = 0;
+          for (j = 1; j > 0; j--)
+            if (temp.compareTo(list[j-1]) < 0){
+              list[j] = list[j-1];
+            } else {
+              break;
+            }
+            list[j] = temp;
+        }
+      } 
+    }
     return null;
   }
 
