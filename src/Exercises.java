@@ -13,6 +13,12 @@ public class Exercises {
   }
 
   public int findMe(ArrayList<String> list, String target) {
+
+    int n = ArrayList.length;
+    for (int i = 0; i < n; i++){
+      if(list[i].equals("ly"))
+      return i; 
+    }
     return -1;
   }
 
