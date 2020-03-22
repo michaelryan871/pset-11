@@ -53,14 +53,19 @@ public class Exercises {
     }
 
     int start = 0;
-    int emd = list.length - 1;
+    int end = list.length;
     int middle = 0;
 
     while (start <= end) {
-      middle = (start + end) / 2; 
+      middle = (start + end) / 2;
+      if (list[middle].compareTo(target) < 0){
+        start = middle + 1;
+      } else if (list[middle].compareTo(target) > 0){
+        end = middle - 1;
+      } else if (list[middle].compareTo(target) == 0){
+        return middle;
+      }
     }
-
-
     return -1;
   }
 
