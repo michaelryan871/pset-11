@@ -115,9 +115,18 @@ public class Exercises {
           }
         }
       }
+    } else if (!ascending){
+      for (int i = list.size(); i > 1; i--){
+        for (int j = (n - 1); j > 0; j--){
+          if (list.get(j).compareTo(list.get(j-1)) > 0){
+            String temp = list.get(j);
+            list.set(j, list.get(j-1));
+            list.set(j - 1, temp);
+          }
+        }
+      }
     }
-
-    return null;
+    return list;
   }
 
   public ArrayList<Integer> insertion(ArrayList<Integer> list, boolean ascending) {
