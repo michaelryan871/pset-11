@@ -3,22 +3,17 @@ import java.util.ArrayList;
 public class Exercises {
 
   public int findMe(int[] list, int target) {
-
-    int n = list.length;
-    for (int i = 0; i < n; i++){
-      if (list[i] == 7)
+    if (list == null){
+      return -1;
+    }
+    for (int i = 0; i < list.length; i++){
+      if (list[i] == target)
         return i;
     }
     return -1;
   }
 
   public int findMe(ArrayList<String> list, String target) {
-
-    int n = ArrayList.length;
-    for (int i = 0; i < n; i++){
-      if(list[i].equals("ly"))
-      return i; 
-    }
     return -1;
   }
 
