@@ -70,6 +70,12 @@ public class Exercises {
   }
 
   public int[] bubble(int[] list, boolean ascending) {
+    if (list == null || target == null){
+      return -1;
+    }
+
+    int n = list.length;
+
     return null;
   }
 
