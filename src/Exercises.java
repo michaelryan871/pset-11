@@ -251,9 +251,18 @@ public class Exercises {
             smallestIndex = j;
         }
     }
+    if (smallestIndex != i) {
+            String head = list.get(i);
+            list.set(i, smallest);
+            list.set(smallestIndex, head);
+        }
+    }
 
-
-
+    if (!ascending) {
+        Collections.reverse(list);
+    }
+    return list;
+}
 
   public ArrayList<Integer> merge(ArrayList<Integer> list, boolean ascending) {
     return null;
