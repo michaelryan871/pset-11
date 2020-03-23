@@ -265,8 +265,22 @@ public class Exercises {
 }
 
   public ArrayList<Integer> merge(ArrayList<Integer> list, boolean ascending) {
-    return null;
-  }
+    if (list.contains(null) || list == null) {
+           return null;
+       }
+
+       ArrayList < Integer > left = new ArrayList < Integer > ();
+       ArrayList < Integer > right = new ArrayList < Integer > ();
+       int center;
+
+       if (list.size() == 1) {
+           return list;
+       } else {
+           center = list.size() / 2;
+           for (int i = 0; i < center; i++) {
+               left.add(list.get(i));
+           }
+
 
   public String[] merge(String[] list, boolean ascending) {
     return null;
