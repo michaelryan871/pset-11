@@ -281,6 +281,19 @@ public class Exercises {
                left.add(list.get(i));
            }
 
+           for (int i = center; i < list.size(); i++) {
+              right.add(list.get(i));
+          }
+
+          left = merge(left, true);
+          right = merge(right, true);
+          combineHalves(left, right, list);
+      }
+      if (!ascending) {
+          Collections.reverse(list);
+      }
+      return list;
+  }
 
   public String[] merge(String[] list, boolean ascending) {
     return null;
